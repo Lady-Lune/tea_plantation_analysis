@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tea accessibility pipeline</title>
+    <link href="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Tea plantation analysis</p>
+          <h1>Pipeline explorer</h1>
+        </div>
+        <div id="status" class="status" role="status">Loading map data…</div>
+      </header>
+      <section class="workspace">
+        <aside class="panel">
+          <h2>Explore stages</h2>
+          <p class="muted">Turn layers on and off to inspect how each stage changes the analysis.</p>
+          <div id="layers" class="layer-list"></div>
+          <div class="legend">
+            <h2>Legend</h2>
+            <div><span class="swatch roads"></span> Original roads</div>
+            <div><span class="swatch tin"></span> Delaunay/TIN additions</div>
+            <div><span class="swatch facilities"></span> Facilities</div>
+            <div><span class="swatch access"></span> Accessibility score</div>
+          </div>
+          <details>
+            <summary>About the data</summary>
+            <p id="metadata" class="muted">Loading metadata…</p>
+          </details>
+        </aside>
+        <section class="map-wrap">
+          <div id="map" aria-label="Interactive pipeline map"></div>
+          <div id="error" class="error" hidden></div>
+        </section>
+      </section>
+    </main>
+    <script src="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

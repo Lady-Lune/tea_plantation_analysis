@@ -1,0 +1,7 @@
+__pycache__
+.venv
+data
+data_*
+GUIDE
+*.txt
+outputs/interactive_map.html

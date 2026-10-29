@@ -1,0 +1,62 @@
+{
+  "minZoom": 7,
+  "maxZoom": 13,
+  "maxFeaturesPerTile": 2500,
+  "layers": {
+    "roads": {
+      "label": "Original roads",
+      "featureCount": 10517,
+      "tiledFeatureCount": 72014
+    },
+    "tea_districts": {
+      "label": "Tea districts",
+      "featureCount": 11,
+      "tiledFeatureCount": 1956
+    },
+    "gnd": {
+      "label": "GND divisions",
+      "featureCount": 14043,
+      "tiledFeatureCount": 45747
+    },
+    "study_area": {
+      "label": "Study area",
+      "featureCount": 1,
+      "tiledFeatureCount": 2272
+    },
+    "health_health": {
+      "label": "Health facilities: health",
+      "featureCount": 2066,
+      "tiledFeatureCount": 14493
+    },
+    "schools_Type3": {
+      "label": "Schools: Type3",
+      "featureCount": 2707,
+      "tiledFeatureCount": 18949
+    },
+    "schools_1C": {
+      "label": "Schools: 1C",
+      "featureCount": 39,
+      "tiledFeatureCount": 273
+    },
+    "schools_Type2": {
+      "label": "Schools: Type2",
+      "featureCount": 26,
+      "tiledFeatureCount": 182
+    },
+    "schools_1AB": {
+      "label": "Schools: 1AB",
+      "featureCount": 18,
+      "tiledFeatureCount": 126
+    },
+    "tin_edges": {
+      "label": "Delaunay/TIN additions",
+      "featureCount": 15205,
+      "tiledFeatureCount": 92394
+    },
+    "accessibility": {
+      "label": "Accessibility and classification",
+      "featureCount": 14043,
+      "tiledFeatureCount": 45747
+    }
+  }
+}
